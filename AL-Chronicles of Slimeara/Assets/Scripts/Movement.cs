@@ -34,11 +34,11 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.D) && isGrounded) 
         {
-            transform.Rotate(Vector3.up, 3);
+            transform.Rotate(Vector3.up, 2);
         }
         if (Input.GetKey(KeyCode.A) && isGrounded)
         {
-            transform.Rotate(Vector3.down, 3);
+            transform.Rotate(Vector3.down, 2);
         }
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded) 
         {
