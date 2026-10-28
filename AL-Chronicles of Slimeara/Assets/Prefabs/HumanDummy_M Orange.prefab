@@ -303,7 +303,7 @@ Rigidbody:
   m_GameObject: {fileID: 3577213444510331581}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -334,8 +334,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  jumpHieght: 250
-  isGrounded: 0
+  jumpHieght: 500
+  isGrounded: 1
   quaternion: {x: 0, y: 0, z: 0, w: 0}
 --- !u!4 &8564308019229375806 stripped
 Transform:

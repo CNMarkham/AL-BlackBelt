@@ -17,11 +17,11 @@ public class GloppyMovement: MonoBehaviour
     void Update()
     {
         Invoke("idleRotation", 6);
-        rb.AddForce(transform.right * 1.5f);
+        rb.AddForce(transform.right * 1f);
     }
     public void idleRotation()
     {
-        rotation = Random.Range(-3, 3);
+        rotation = Random.Range(-2, 2);
         transform.Rotate(Vector3.down, rotation);
     }
 }
