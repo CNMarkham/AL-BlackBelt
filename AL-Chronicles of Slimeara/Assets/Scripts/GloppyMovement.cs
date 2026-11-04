@@ -10,18 +10,17 @@ public class GloppyMovement: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        InvokeRepeating("idleRotation", 0f, 0.1f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Invoke("idleRotation", 6);
-        rb.AddForce(transform.right * 1f);
+        rb.AddForce(transform.right * 1.5f);
     }
     public void idleRotation()
     {
-        rotation = Random.Range(-2, 2);
+        rotation = Random.Range(-6, 6);
         transform.Rotate(Vector3.down, rotation);
     }
 }

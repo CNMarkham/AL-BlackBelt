@@ -9,11 +9,16 @@ public class MunchyMovement : MonoBehaviour
     void Start()
     {
         rigidbody = gameObject.GetComponent<Rigidbody>();
+        InvokeRepeating("Boing", 10f, 5f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        rigidbody.AddForce(transform.right * 1.5f);
+        rigidbody.AddForce(transform.right * 0.5f);
+    }
+    void Boing()
+    {
+        rigidbody.AddForce(transform.up * 400f);
     }
 }
