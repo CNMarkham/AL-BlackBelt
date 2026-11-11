@@ -7,6 +7,7 @@ public class GloppyMovement: MonoBehaviour
 {
     private int rotation;
     public Rigidbody rb;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +17,11 @@ public class GloppyMovement: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce(transform.right * 1.5f);
+        rb.AddForce(transform.right * speed);
     }
     public void idleRotation()
     {
         rotation = Random.Range(-6, 6);
-        transform.Rotate(Vector3.down, rotation);
+        transform.Rotate(0, -rotation, 0);
     }
 }

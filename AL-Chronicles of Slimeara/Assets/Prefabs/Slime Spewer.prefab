@@ -177,6 +177,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possibleSpawns:
-  - {fileID: 8670956352035606, guid: 6ff1d2970fddbdf43bcf1936a8e3fcdc, type: 3}
   - {fileID: 2600403085865475160, guid: 5ad30fe3374d5ab4eadbb7bcfc9dd9b2, type: 3}
   currentTime: 0
